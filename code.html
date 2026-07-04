@@ -1,0 +1,628 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ffffff",
+                    "on-primary": "#000000",
+                    "primary-container": "#333333",
+                    "on-primary-container": "#ffffff",
+                    "secondary": "#a1a1aa",
+                    "on-secondary": "#000000",
+                    "background": "#000000",
+                    "on-background": "#ffffff",
+                    "surface": "#131313",
+                    "on-surface": "#ffffff",
+                    "surface-variant": "#27272a",
+                    "on-surface-variant": "#d4d4d8",
+                    "outline": "#52525b",
+                    "outline-variant": "#3f3f46",
+                    "surface-container-low": "#1b1b1b",
+                    "surface-container": "#201f1f",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-highest": "#353534",
+                    "surface-container-lowest": "#0e0e0e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "unit": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Montserrat"],
+                    "label-md": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "label-sm": ["JetBrains Mono"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}}catch(_e){}</script></head><body class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300 ease-in-out h-20">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Century Ink Logo" class="h-10 md:h-12 w-auto" src="logo.png">
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-all duration-300" href="#portfolio">Portfolio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#bio">Bio</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-DEFAULT font-label-md text-label-md font-bold uppercase tracking-wider hover:bg-on-surface-variant transition-colors" href="#booking">Book Now</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA1Wqjct3gbRbfvGlFo6mtHnWwoLQmfwxNRcD108-z6o5_l3prXAxB3RqQHEvSKuHOIr4c_tdbNKmufwyQEgvrMi89y2Ew7-2CaSRctPFWVD_eDHnXne3Wmd9iYOzp9PhNn1l3SnSZEA8_0UMRchBqx0aNF_CdlmqAjsFQ65OB0xlHrzKbypkEsMeqgVkgpMO9ke8jC9Ea3nLu_D2EM6BJF1H2rGJeHF9vi0I7OguzC12DTHf8Z7p27p0pdSxJwOKaCCnjFzVXmiAU&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl space-y-6">
+<p class="font-label-md text-label-md text-primary uppercase tracking-[0.3em]">Artist Driven Studio</p>
+<h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg leading-tight">Century Ink — Where Art Becomes Part of Your Story</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Custom tattoos by <span class="text-primary font-bold">HaTran</span> | Precision, safety, and unique storytelling on every canvas.</p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-DEFAULT font-headline-md text-headline-md text-center flex items-center justify-center hover:bg-on-surface-variant transition-all" href="#booking">
+                    Book Your Consultation
+                </a>
+<a class="border border-primary text-primary px-8 py-4 rounded-DEFAULT font-headline-md text-headline-md text-center flex items-center justify-center hover:bg-primary/10 transition-all" href="#portfolio">
+                    View Portfolio
+                </a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50">
+<span class="font-label-sm text-label-sm text-primary">SCROLL</span>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+</section>
+<!-- Portfolio Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="portfolio">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">The Gallery</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+<!-- Image Grid Items -->
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOexdrvw5MCZRTh80kxlubPS4HyaUAoSY3k6fRqYW9YlFv6mMIpHL83WBrJ2OAuZh9dW3aZmORYBKZ--CW-TMXaFRDwLUe_YZodZpwcoHRoXyT7qt6X_Uirg90ODk2PIXOBdMZgaeFfNbamfnWG_hSvUZpYMcrIUhntYTLKBzY5XIGvLCmBMYBJMdwTC5En8GbDMHuYDO_7-EMDXMs0ZExMe6Ig8EvstlZkuhRhX9UoQhKs-LYJaG4T2ebuENI-zEy1E2QNyg3yTk">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOexdrvw5MCZRTh80kxlubPS4HyaUAoSY3k6fRqYW9YlFv6mMIpHL83WBrJ2OAuZh9dW3aZmORYBKZ--CW-TMXaFRDwLUe_YZodZpwcoHRoXyT7qt6X_Uirg90ODk2PIXOBdMZgaeFfNbamfnWG_hSvUZpYMcrIUhntYTLKBzY5XIGvLCmBMYBJMdwTC5En8GbDMHuYDO_7-EMDXMs0ZExMe6Ig8EvstlZkuhRhX9UoQhKs-LYJaG4T2ebuENI-zEy1E2QNyg3yTk">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRlA20_5M98nwDrursFcpbGq8X5eBXPSJa9x6Ls60ocYh_zBzYNj0RWXGqzkEKL6PEJpXwmqiuwPzaxckZQm7blJtXDBT_tv0JmhqyNRuA60viQfrS_S54hkixMGkyGupUzKnHme4O49bLK9TeuNFxMdtOI-rd4Dnnc1g1N4k7fZXuBhKiQtkSSFOErmwYYplGft-UdQLRobpZRF96oxpk5v150fPuDHvPagnQ82xwcy2WZ-WgCImtK304YyYzYK7Kl2MZe6St5go">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRlA20_5M98nwDrursFcpbGq8X5eBXPSJa9x6Ls60ocYh_zBzYNj0RWXGqzkEKL6PEJpXwmqiuwPzaxckZQm7blJtXDBT_tv0JmhqyNRuA60viQfrS_S54hkixMGkyGupUzKnHme4O49bLK9TeuNFxMdtOI-rd4Dnnc1g1N4k7fZXuBhKiQtkSSFOErmwYYplGft-UdQLRobpZRF96oxpk5v150fPuDHvPagnQ82xwcy2WZ-WgCImtK304YyYzYK7Kl2MZe6St5go">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_7Exd4oIuK5b2aE7D-9tY5_4z-9emFGRMs8ufIvzAYNC7focR38GyVU08wLpSHfVs-m9TdnWhpw124F-krNVbkMu-Hw4Nlj1srWCKX56tt1aSAdMGZ_bvvT02_7GaLKNfvsgZTG7UszmPFM4PL7zeArK5WoHo5Xokk3Qh0SffvQVbzMDXp-48-qQSQQH04TFoa48nute3w65egURBRTpOsEJz4ny5fiamFpMqCXyuUjm5TfEh4RDcDQZekguia236RaNYC2lGkT8">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_7Exd4oIuK5b2aE7D-9tY5_4z-9emFGRMs8ufIvzAYNC7focR38GyVU08wLpSHfVs-m9TdnWhpw124F-krNVbkMu-Hw4Nlj1srWCKX56tt1aSAdMGZ_bvvT02_7GaLKNfvsgZTG7UszmPFM4PL7zeArK5WoHo5Xokk3Qh0SffvQVbzMDXp-48-qQSQQH04TFoa48nute3w65egURBRTpOsEJz4ny5fiamFpMqCXyuUjm5TfEh4RDcDQZekguia236RaNYC2lGkT8">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS2z40POH0mbSgYLWcmVT5LPQvCWFKU-odvvd3SYGWcEjxsDdHOmMGJnEHQKyyyrktFAY8fVeFrrW9RZzlJ8FUB49t7KR5fq4zBolDvYq8J5ZBuM_4jSmYnv2gL1T0UZBIecRN6xe46D_lWd6RzV1yRnuIAKCgaTkCVqVYLMHCDuXwTHPgyeiT7HkLK3Yrdr3mQa5QYU0f1_fZkxwilFXWBaLTfrrrrh1jyrFMYsseqJ4QatOQtOE3z5r0BaYeWBh70VlpKJMH34U">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS2z40POH0mbSgYLWcmVT5LPQvCWFKU-odvvd3SYGWcEjxsDdHOmMGJnEHQKyyyrktFAY8fVeFrrW9RZzlJ8FUB49t7KR5fq4zBolDvYq8J5ZBuM_4jSmYnv2gL1T0UZBIecRN6xe46D_lWd6RzV1yRnuIAKCgaTkCVqVYLMHCDuXwTHPgyeiT7HkLK3Yrdr3mQa5QYU0f1_fZkxwilFXWBaLTfrrrrh1jyrFMYsseqJ4QatOQtOE3z5r0BaYeWBh70VlpKJMH34U">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_W1NI_uC3vMGgia6ead_HtR9Em60NyGQ1Y1N1PoGXvy0Tw9fnCQ09D3MfRzh5eAg9nVT1smdygxGV5IfvqZYGRuiqp2QX3wjiQEptuUpzyGIklph72mmGy6t6ot4ppgi1CtZgxIpANJ72IdrVfCIbf7HybDsOKTm3Ztyr8QOAL1x0C73opKcDsFYHQ4FRLsV28mJni8EdggEVHJvR_DL5ArgAur2cBLarIadB18tnJNEp98DzonRdHOe77ZH0As2bCR3LXKYBfU">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg_W1NI_uC3vMGgia6ead_HtR9Em60NyGQ1Y1N1PoGXvy0Tw9fnCQ09D3MfRzh5eAg9nVT1smdygxGV5IfvqZYGRuiqp2QX3wjiQEptuUpzyGIklph72mmGy6t6ot4ppgi1CtZgxIpANJ72IdrVfCIbf7HybDsOKTm3Ztyr8QOAL1x0C73opKcDsFYHQ4FRLsV28mJni8EdggEVHJvR_DL5ArgAur2cBLarIadB18tnJNEp98DzonRdHOe77ZH0As2bCR3LXKYBfU">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd3NzA2NZuK5FcAHZplL0uioIXWaMl7URvexLg0mbrsmkwwurm0OehbAxogVUwS1wxA0ykl2euIVi2U6Kh8RaRx6RfFzuwQuxZ3PAU2E6lwZM3_sSxRECipwyH0lo-qKBHBGhYk2lL7y3jTRn8dJYHIK30ZmEm8DS2Yv2AGGQwbhzjAuZyoplGePbhdm8pgMSaZUxyXg5nHLTVV2zDRgQH1DsMGU4PC2xus4S6bQtWbyjlS08OApLkILIYH4mMWQfBm76c7fkTtM">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd3NzA2NZuK5FcAHZplL0uioIXWaMl7URvexLg0mbrsmkwwurm0OehbAxogVUwS1wxA0ykl2euIVi2U6Kh8RaRx6RfFzuwQuxZ3PAU2E6lwZM3_sSxRECipwyH0lo-qKBHBGhYk2lL7y3jTRn8dJYHIK30ZmEm8DS2Yv2AGGQwbhzjAuZyoplGePbhdm8pgMSaZUxyXg5nHLTVV2zDRgQH1DsMGU4PC2xus4S6bQtWbyjlS08OApLkILIYH4mMWQfBm76c7fkTtM">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuC9OcZjmqYzcnd0JJGFWvI84c4ROoT69XWJ2gCwc2vRqhlLpqLhRlNSxN_Xhwe7XdQeoLdaVItwhYgDl2Km3XeDL01Ao7nQ6GMvsFskfTurJg5GOb14KS87-arfWjfgn-0yTbi2jUyJIU8W_JNkgIktqkqKfVw7apPnFhEng0gVjiyC2JKV1FyGENRNaxuztFXlNctoXvwBdtXxbk5dPvPnQhAHZxAdNPfmjKEbTRbUOim_H-pv7Z84GjUwbZqAzFTs8u05kp7rc">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuC9OcZjmqYzcnd0JJGFWvI84c4ROoT69XWJ2gCwc2vRqhlLpqLhRlNSxN_Xhwe7XdQeoLdaVItwhYgDl2Km3XeDL01Ao7nQ6GMvsFskfTurJg5GOb14KS87-arfWjfgn-0yTbi2jUyJIU8W_JNkgIktqkqKfVw7apPnFhEng0gVjiyC2JKV1FyGENRNaxuztFXlNctoXvwBdtXxbk5dPvPnQhAHZxAdNPfmjKEbTRbUOim_H-pv7Z84GjUwbZqAzFTs8u05kp7rc">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9D0xxJNfB4iiIdInMxgVmSDjdVn7ucWyjJ1DOd0cCL3ityRq5Du4SNSKcsMgqghAXvjQaNVnDrTPn1WmVOStQkZ14ZS_dd-FCF-rI9nFMA8u1yn_ZjnUzS071-ujX9hZHuZys6uvyujrHqg2QHdW3vNTnyYiZFEUHQEpriEg3WD9y6pD1Ru0U4bauSWasJWytbdCIgBb3PezqOl7cVcvniqCxX9kAViWUcce6aYgRs_lc4t3Vk7ZLj14qOwMDfVRX3dC1dlIyNbQ">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9D0xxJNfB4iiIdInMxgVmSDjdVn7ucWyjJ1DOd0cCL3ityRq5Du4SNSKcsMgqghAXvjQaNVnDrTPn1WmVOStQkZ14ZS_dd-FCF-rI9nFMA8u1yn_ZjnUzS071-ujX9hZHuZys6uvyujrHqg2QHdW3vNTnyYiZFEUHQEpriEg3WD9y6pD1Ru0U4bauSWasJWytbdCIgBb3PezqOl7cVcvniqCxX9kAViWUcce6aYgRs_lc4t3Vk7ZLj14qOwMDfVRX3dC1dlIyNbQ">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBnJQ1UPU7sTTC-QaJy2HRZpqQJrNZ0BY2kiOZsphrKEY-NIEOteMaamLUKui1E-mTGoMECwcjOleY7gEfLziheWcPJwFC-Fz5VWWl5pMEPNYtXaDp7WuL6MvT-bDzrAsVo04GL6G45bm2dBUwie33TSj46TPOOkU5fslqG7TZJRMN-FrHo0CCnNfcvH3eRg-VLVQU48v4eEB84Y3Nj2UQ8H9FkcpPIQ2-BtrIasq16UgCDQ4_H3hF3X1PpwVJdLjbis84sE4MeIc">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBnJQ1UPU7sTTC-QaJy2HRZpqQJrNZ0BY2kiOZsphrKEY-NIEOteMaamLUKui1E-mTGoMECwcjOleY7gEfLziheWcPJwFC-Fz5VWWl5pMEPNYtXaDp7WuL6MvT-bDzrAsVo04GL6G45bm2dBUwie33TSj46TPOOkU5fslqG7TZJRMN-FrHo0CCnNfcvH3eRg-VLVQU48v4eEB84Y3Nj2UQ8H9FkcpPIQ2-BtrIasq16UgCDQ4_H3hF3X1PpwVJdLjbis84sE4MeIc">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1FybuC0dze8PBou4NgqMke2FeJv4PqR3b3QL0YImiFBhX0StZEFHCtQ9wEvJ3hLJ72vVxhAQ_whDGmyYU0LwLmBGBJJi659oghKnmFd4H8xG-QpubBp8n_7yzmzzPW4mxukwXJpC2ilO1TaiMDTrxQSLcgBLiAXR3azJ1xQCmKFIOnTMWSmyVN_k9Krj-B6UJNIifyUKC7eUhcOm87k4ZBi29jxgESwuS5k5SHkx0PmLd4yLlJrLiEhDfK7xaiwyVygLUdZs_xSw">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1FybuC0dze8PBou4NgqMke2FeJv4PqR3b3QL0YImiFBhX0StZEFHCtQ9wEvJ3hLJ72vVxhAQ_whDGmyYU0LwLmBGBJJi659oghKnmFd4H8xG-QpubBp8n_7yzmzzPW4mxukwXJpC2ilO1TaiMDTrxQSLcgBLiAXR3azJ1xQCmKFIOnTMWSmyVN_k9Krj-B6UJNIifyUKC7eUhcOm87k4ZBi29jxgESwuS5k5SHkx0PmLd4yLlJrLiEhDfK7xaiwyVygLUdZs_xSw">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8JXJ4jxACL9fPFIZihpwHW6JzgRIz5T0FNooathakS--mcWlvRH6i5zsXd_4qdIIyTNfKV9XlccLteqQ6IclBzaKDexM4rCeIH7xv26Zib88kCmpZArtQ50Sjz5QQCMmI_tn5Tw6KAIrPfuZB5OqLO9Pfj_cDSsX2pYf3sJHAK0_dTMzVQjCnm57Yav7gaVLjwtbIOuN_Nv7q7H5mTy1eOU4gpJrqqTept7RESP0wUMxx_sM_fvdXTSY5Qe_r-qsg5NEe8oLqOlY">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8JXJ4jxACL9fPFIZihpwHW6JzgRIz5T0FNooathakS--mcWlvRH6i5zsXd_4qdIIyTNfKV9XlccLteqQ6IclBzaKDexM4rCeIH7xv26Zib88kCmpZArtQ50Sjz5QQCMmI_tn5Tw6KAIrPfuZB5OqLO9Pfj_cDSsX2pYf3sJHAK0_dTMzVQjCnm57Yav7gaVLjwtbIOuN_Nv7q7H5mTy1eOU4gpJrqqTept7RESP0wUMxx_sM_fvdXTSY5Qe_r-qsg5NEe8oLqOlY">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfRK-QEmkM7FArJR_MVJHw7fRbSxaOXzg-qBqNqimL490cE_FUHTQnuDiuLtmtO8hoQc0zJGtJGoj-ECu4NmroGneL6ynMEQ2Obltt2gGy40AQjE0ZAN9-w5aHAjyAwixyLTkHiAvJpr8XP4kvMtBciYfTmVbn5dnMdz_PiKaOAQBr3wG-7UurEtk8WMU66FWEpjcFfMe3fOsyewTccKGvug063T4yBtPsK61fo3DJB0ZVIPULReZqYm84mJPwH66pGO6QpH4gldE">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfRK-QEmkM7FArJR_MVJHw7fRbSxaOXzg-qBqNqimL490cE_FUHTQnuDiuLtmtO8hoQc0zJGtJGoj-ECu4NmroGneL6ynMEQ2Obltt2gGy40AQjE0ZAN9-w5aHAjyAwixyLTkHiAvJpr8XP4kvMtBciYfTmVbn5dnMdz_PiKaOAQBr3wG-7UurEtk8WMU66FWEpjcFfMe3fOsyewTccKGvug063T4yBtPsK61fo3DJB0ZVIPULReZqYm84mJPwH66pGO6QpH4gldE">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAugETzCxt2TGRyl2tlGJ7fK6Op0Eq71srHe9ffbhbQS0akcwb6ih_tYXkPO27-zOr6Ri0AYDE2QRovVOkLQXlHwMWtrobtci8Ikr_OR_GaAKGkBxyH_GkXPXbHSKqBkjkGXKwpOPAujY2O7E708zgEawRQ6ST163R8HD-QXMt-RtqcLT4kbJNSjstYgGuj4Kc07HWtNN0MiDbA02fGF6Tv6mC169XQVpPKn6hp1PtaKEY8QX_uJPJVVRjGtIKvnL1aTDXvJUr8qFI">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAugETzCxt2TGRyl2tlGJ7fK6Op0Eq71srHe9ffbhbQS0akcwb6ih_tYXkPO27-zOr6Ri0AYDE2QRovVOkLQXlHwMWtrobtci8Ikr_OR_GaAKGkBxyH_GkXPXbHSKqBkjkGXKwpOPAujY2O7E708zgEawRQ6ST163R8HD-QXMt-RtqcLT4kbJNSjstYgGuj4Kc07HWtNN0MiDbA02fGF6Tv6mC169XQVpPKn6hp1PtaKEY8QX_uJPJVVRjGtIKvnL1aTDXvJUr8qFI">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTkQZnZVpqDaLDFslQVMGEZdYd42SWiRfWj1QfZrjKMPJmUNYLmkemKyegUglTUARWSaFEy_lBnxRceZ4asiJrUb5zALk4Hi0WZVyiUVorZKrqBCNgSxh282njfV7XdN6k9CmzZHSEA6op51Lg2cLNTL-1aDzE6sAbq0tpko2iJusyc1O4SZ6UGKTB1mcd9lWQIWLg5LQiQ2QQHdx3IdckNgfVgsLnBwx_cjLckeSk69Y0xI2oKyE_9Iw257RxEcDtrerXMU1s7gI">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTkQZnZVpqDaLDFslQVMGEZdYd42SWiRfWj1QfZrjKMPJmUNYLmkemKyegUglTUARWSaFEy_lBnxRceZ4asiJrUb5zALk4Hi0WZVyiUVorZKrqBCNgSxh282njfV7XdN6k9CmzZHSEA6op51Lg2cLNTL-1aDzE6sAbq0tpko2iJusyc1O4SZ6UGKTB1mcd9lWQIWLg5LQiQ2QQHdx3IdckNgfVgsLnBwx_cjLckeSk69Y0xI2oKyE_9Iw257RxEcDtrerXMU1s7gI">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0FSkmb_y93FzhZsBGkmCtH2s_pszMcqKlTiOiUmxxEVifcO5Ei_c07BJND-c__3nWSU_4asdCrNC5nw_TjUtQLd_SuJAo7Wm5SLXAT6_zRit2ibWRXGtazmNL0sz1QcnmP_0VFXofAW5B4bPiQ_bxjLdOQxnHxkKYfuHnSzX9aeeqxDCWqieWobSRZsnqwcS1ZhxEN3mbCgK8uzLonvvxvtL69lE8hJiO1NdMb3JdxDxl3OTopk4AdgTftMqfLsPm_gnHaq61LqI">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0FSkmb_y93FzhZsBGkmCtH2s_pszMcqKlTiOiUmxxEVifcO5Ei_c07BJND-c__3nWSU_4asdCrNC5nw_TjUtQLd_SuJAo7Wm5SLXAT6_zRit2ibWRXGtazmNL0sz1QcnmP_0VFXofAW5B4bPiQ_bxjLdOQxnHxkKYfuHnSzX9aeeqxDCWqieWobSRZsnqwcS1ZhxEN3mbCgK8uzLonvvxvtL69lE8hJiO1NdMb3JdxDxl3OTopk4AdgTftMqfLsPm_gnHaq61LqI">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjbzX8gLG9JajTHasZyoMrwV4esdKd7Fd3se693P_0U_b8U17JFEu927rkb9t0DF85QZ8umhwZiY-Ns-YiZgSrqdgJtG_tVzQgL29prwW-CG06llB5FiHx-FalabVeUycPidlcJ7eMMvCI1-BqR_NMjdubB_s0qPrrBoa0rZNC2Mv4aiSgxmBWQxomtKcO3ridD87WeKAgqz85hcWk3Kc052yqDzAPDGxqzx0zTclFzsKPg2vF2GuEsdTGMvu-M-G8tUEzn7U-oQ">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzjbzX8gLG9JajTHasZyoMrwV4esdKd7Fd3se693P_0U_b8U17JFEu927rkb9t0DF85QZ8umhwZiY-Ns-YiZgSrqdgJtG_tVzQgL29prwW-CG06llB5FiHx-FalabVeUycPidlcJ7eMMvCI1-BqR_NMjdubB_s0qPrrBoa0rZNC2Mv4aiSgxmBWQxomtKcO3ridD87WeKAgqz85hcWk3Kc052yqDzAPDGxqzx0zTclFzsKPg2vF2GuEsdTGMvu-M-G8tUEzn7U-oQ">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcvKH8kTvy3GaPUYmZxwuVZFvNlYIR1GmGEpFnSns-a8W6N6UcFvGJoa_wWEBu2vsU53YC96aQzrKW9mRsXTKQnc_ZrGrReHEB9iL87wXjFW211b9tQHpRF4GXH--LRlnbnCIakwbIYjXFbxrZrWIq78O48l994Cd0wVXjcIhAAM4Mzl8e65Hep3uldRg5hYEqoCvGP02BFdreiYmS7DF5yED3SK6P1Qha8mlwkM5DXnXBdsI5MxpMXN5UTT7JqQbplYIavdoYZs0">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcvKH8kTvy3GaPUYmZxwuVZFvNlYIR1GmGEpFnSns-a8W6N6UcFvGJoa_wWEBu2vsU53YC96aQzrKW9mRsXTKQnc_ZrGrReHEB9iL87wXjFW211b9tQHpRF4GXH--LRlnbnCIakwbIYjXFbxrZrWIq78O48l994Cd0wVXjcIhAAM4Mzl8e65Hep3uldRg5hYEqoCvGP02BFdreiYmS7DF5yED3SK6P1Qha8mlwkM5DXnXBdsI5MxpMXN5UTT7JqQbplYIavdoYZs0">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeFI6-76U71hz1PpZ8o_o6Zo6edGGMs0dCcWXZwYRGld1En3TthE-lHFrkxjhtUTk9Yf1pMJYRi6Fk4LC4ISfJZC5mBoH62R4nx1xAi5C5a1DmD8hELLyT3CwS4u9IB3Y3keo7BUfTON0kbFKMvcziMEN2dO02hcNjmm6W5ox4JaSnqebwN1dQNdKr3QRxqlwsoIi_aR9Gi9UNbxTbXlgMNAUstFmC0LO0O0mVAxG5QTi-BoJHFcLlj0F7eyg-IkpK2Tbaj-GFHNQ">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeFI6-76U71hz1PpZ8o_o6Zo6edGGMs0dCcWXZwYRGld1En3TthE-lHFrkxjhtUTk9Yf1pMJYRi6Fk4LC4ISfJZC5mBoH62R4nx1xAi5C5a1DmD8hELLyT3CwS4u9IB3Y3keo7BUfTON0kbFKMvcziMEN2dO02hcNjmm6W5ox4JaSnqebwN1dQNdKr3QRxqlwsoIi_aR9Gi9UNbxTbXlgMNAUstFmC0LO0O0mVAxG5QTi-BoJHFcLlj0F7eyg-IkpK2Tbaj-GFHNQ">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ3EN1rZuRRF6-gJp-542azOmWoqRThmxz1Q5EzomkAiNZwoAwIeLMkUCmT8VqOKUSEWYXXD5_FIIsRZQVEJdJg7CHVnYEHL626fAmC_ETxH12jdrGAJf23mW4VR_1BX_x_XPtPxwg-RIQNbfiGCwMBs1sGr7_zn676m6mkdK8910Iq7PtjG5T_NJuNPMcYG2eWN9tQlAl8wIG2Ke7ymz6rT3rTHJv6RCc9ZUm3vo2UPD7WSqkOnJSVjsaQdVauIzu7Qed79fNqfw">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ3EN1rZuRRF6-gJp-542azOmWoqRThmxz1Q5EzomkAiNZwoAwIeLMkUCmT8VqOKUSEWYXXD5_FIIsRZQVEJdJg7CHVnYEHL626fAmC_ETxH12jdrGAJf23mW4VR_1BX_x_XPtPxwg-RIQNbfiGCwMBs1sGr7_zn676m6mkdK8910Iq7PtjG5T_NJuNPMcYG2eWN9tQlAl8wIG2Ke7ymz6rT3rTHJv6RCc9ZUm3vo2UPD7WSqkOnJSVjsaQdVauIzu7Qed79fNqfw">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+<div class="group relative overflow-hidden aspect-square border border-outline-variant/30 bg-surface-container cursor-pointer portfolio-item" data-src="https://lh3.googleusercontent.com/aida-public/AB6AXuC845Y0Ewr0py6fuEKC6gdbESXh-5o8qEOGNLoUzriofHScK0dZ3EXwClx4YgFXJhI8DRg5mcod8j4bxsiHQyGJPrI4OVK3ysuk6T1qTdbcT4OmQqCyByZRThpxVahtkC1Cpl2TPzL-pfSZx9QBYhmAJ4U389POhlCxsegibWRQYPrvcg6LeiGWHQzPPSt3CjDMeI5vpgxsM9GdhEZ_crsQYw6nEXfY3QeKtGMqPfiXCPzRzIzvbgtJV4Qo9JRk8jQamWBfRhxSKwI">
+<img alt="Tattoo Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC845Y0Ewr0py6fuEKC6gdbESXh-5o8qEOGNLoUzriofHScK0dZ3EXwClx4YgFXJhI8DRg5mcod8j4bxsiHQyGJPrI4OVK3ysuk6T1qTdbcT4OmQqCyByZRThpxVahtkC1Cpl2TPzL-pfSZx9QBYhmAJ4U389POhlCxsegibWRQYPrvcg6LeiGWHQzPPSt3CjDMeI5vpgxsM9GdhEZ_crsQYw6nEXfY3QeKtGMqPfiXCPzRzIzvbgtJV4Qo9JRk8jQamWBfRhxSKwI">
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl">zoom_in</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="fixed inset-0 z-[100] bg-background/95 backdrop-blur-sm hidden items-center justify-center transition-all duration-300 opacity-0" id="lightbox">
+    <button class="absolute top-6 right-6 text-primary hover:text-white transition-colors z-[110]" id="close-lightbox">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="w-full h-full p-4 flex items-center justify-center">
+        <img alt="Portfolio Preview" class="max-w-[90vw] max-h-[85vh] object-contain shadow-2xl pointer-events-auto" id="lightbox-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgcng9IjgiIGZpbGw9IiNlOGVhZWQiLz48cGF0aCBkPSJNMTcwIDEzMCBsMzAgNDAgbDIwLTE1IGw0MCA1NSBIMTQweiIgZmlsbD0iI2JkYzFjNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjEyMCIgcj0iMTgiIGZpbGw9IiNiZGMxYzYiLz48L3N2Zz4=">
+    </div>
+</div>
+
+<!-- Bio Section -->
+<section class="py-24 bg-surface-container-lowest overflow-hidden" id="bio">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative group">
+<div class="aspect-[4/5] bg-cover bg-center rounded-DEFAULT grayscale hover:grayscale-0 transition-all duration-700 border border-outline-variant/30" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCF8h9uX8Ilr79MKDibTxIps9UQh2APKuEm_p7vXKqfUImk-6No0gi1a72HxYgHy-MqdcdoSkwpPVUrhaEf2vXSWtjTypmecT5NLy5cwnNWEncgXN4UCAHmZ70XjPN--O4bUr8wEcuI2XmTYXfxFC4s5zySf2_RmKV-V_uU6cweocNUuLr14g1UejP1YCoRqwx1an9kRbI4NLukRptAwEipGS0VW5iASjU2QxwxTwS_oMDsaGGFIq598UjOmHGnbUK8x8jnMHXjl0w&quot;);"></div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-primary"></div>
+<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-primary"></div>
+</div>
+<div class="md:col-span-7 space-y-8">
+<div class="space-y-4">
+<p class="font-label-md text-label-md text-primary tracking-widest uppercase">The Artist Behind Century</p>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">HaTran: Master of the Permanent Mark</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    With over 12 years of needlework expertise, HaTran has established himself as a premier voice in the realism community. His philosophy is simple: a tattoo is an intimate collaborative dialogue between artist and canvas. 
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 italic">
+                    "I don't just build designs; I capture memories, armor, and identities. Every line is intentional, every shadow serves a story."
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-8">
+<div>
+<h4 class="font-headline-md text-primary">12+ Years</h4>
+<p class="font-label-sm text-label-sm uppercase">Professional Craft</p>
+</div>
+<div>
+<h4 class="font-headline-md text-primary">5,000+</h4>
+<p class="font-label-sm text-label-sm uppercase">Custom Pieces</p>
+</div>
+<div>
+<h4 class="font-headline-md text-primary">Global</h4>
+<p class="font-label-sm text-label-sm uppercase">Award Winner</p>
+</div>
+<div>
+<h4 class="font-headline-md text-primary">Sterile</h4>
+<p class="font-label-sm text-label-sm uppercase">Cert. Professional</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="services">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Studio Offerings</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto">Premium service from concept to healing. Our pricing reflects the precision and luxury of monochrome realism.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<!-- Custom Design -->
+<div class="bg-surface-container hover:bg-surface-container-high p-8 border border-outline-variant/20 group transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">edit_note</span>
+<h3 class="font-headline-md mb-4">Custom Concept</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Original artwork tailored specifically to your anatomy and story. Includes consultation and 2 revision rounds.</p>
+<p class="font-label-md text-primary border-t border-outline-variant/30 pt-4">Starting at $250/hr</p>
+</div>
+<!-- Large Scale -->
+<div class="bg-surface-container hover:bg-surface-container-high p-8 border border-outline-variant/20 group transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">architecture</span>
+<h3 class="font-headline-md mb-4">Master Pieces</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Full sleeves, back pieces, and body suits. Multi-session projects focusing on flow and large-scale composition.</p>
+<p class="font-label-md text-primary border-t border-outline-variant/30 pt-4">Project Quotes Available</p>
+</div>
+<!-- Restoration -->
+<div class="bg-surface-container hover:bg-surface-container-high p-8 border border-outline-variant/20 group transition-all duration-500">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">auto_fix_high</span>
+<h3 class="font-headline-md mb-4">Touch-ups &amp; Care</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Free touch-ups on all original work for 6 months. Expert aftercare guidance and professional-grade supplies.</p>
+<p class="font-label-md text-primary border-t border-outline-variant/30 pt-4">Complimentary (In-House)</p>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-center mb-16">The Century Experience</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface p-8 rounded-DEFAULT border-l-4 border-primary">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md italic text-on-surface mb-6">"HaTran is a true visionary. He took a vague idea and turned it into a masterpiece that flows perfectly with my arm's structure. The studio is impeccably clean."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary">JD</div>
+<p class="font-label-md">James Davidson</p>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-DEFAULT border-l-4 border-primary">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md italic text-on-surface mb-6">"The only place I trust for my realism work. The detail and contrast are incredible even after a year of healing. A professional atelier through and through."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary">SL</div>
+<p class="font-label-md">Sarah Linh</p>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-DEFAULT border-l-4 border-primary">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md italic text-on-surface mb-6">"Century Ink sets the bar. The consultation was thorough, the environment was relaxing, and the actual process was as comfortable as it gets."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary">MT</div>
+<p class="font-label-md">Marcus Thorne</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Aftercare & FAQ -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg mb-8">FAQ &amp; Aftercare</h2>
+<div class="space-y-6">
+<details class="group border-b border-outline-variant/30 pb-4 cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md list-none group-hover:text-primary transition-colors">
+                        How do I prepare for my session?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Hydrate well, avoid alcohol for 24 hours prior, eat a solid meal, and wear comfortable clothing that allows easy access to the area being tattooed.</p>
+</details>
+<details class="group border-b border-outline-variant/30 pb-4 cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md list-none group-hover:text-primary transition-colors">
+                        What is the healing timeline?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Surface healing usually takes 2-3 weeks, but the skin takes about 4-6 months to fully regenerate and for black/grey tones to settle.</p>
+</details>
+<details class="group border-b border-outline-variant/30 pb-4 cursor-pointer">
+<summary class="flex justify-between items-center font-headline-md list-none group-hover:text-primary transition-colors">
+                        Do you do cover-ups?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-md text-on-surface-variant mt-4">Yes, though cover-ups require an in-person consultation to assess the existing ink and discuss realistic design possibilities in realism style.</p>
+</details>
+</div>
+</div>
+<div class="bg-primary/5 p-8 border-2 border-primary/20 rounded-DEFAULT">
+<h3 class="font-headline-md mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">medical_services</span>
+                Quick Care Tips
+            </h3>
+<ul class="space-y-4 font-body-md text-on-surface">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+                    Keep the bandage on for the time specified by HaTran.
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+                    Wash gently with fragrance-free antibacterial soap.
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0">check_circle</span>
+                    Apply a thin layer of recommended ointment only when dry.
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0">cancel</span>
+                    DO NOT scratch, peel, or soak the tattoo in water.
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary flex-shrink-0">cancel</span>
+                    Keep out of direct sunlight during the first month.
+                </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Booking / Contact Section -->
+<section class="py-24 bg-surface-container-low" id="booking">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-16">
+<!-- Contact Form -->
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-2">Start Your Journey</h2>
+<p class="font-body-md text-on-surface-variant">Fill out the form below to request a consultation. Please be as descriptive as possible.</p>
+</div>
+<form class="space-y-4" id="contact-form">
+<div class="grid md:grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase text-primary">Full Name</label>
+<input class="w-full bg-surface-container-highest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary text-on-surface px-4 py-3 rounded-DEFAULT transition-all" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase text-primary">Email Address</label>
+<input class="w-full bg-surface-container-highest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary text-on-surface px-4 py-3 rounded-DEFAULT transition-all" type="email">
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase text-primary">Placement Area</label>
+<input class="w-full bg-surface-container-highest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary text-on-surface px-4 py-3 rounded-DEFAULT transition-all" placeholder="e.g., Forearm, Ribs, Upper Back" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase text-primary">Project Description</label>
+<textarea class="w-full bg-surface-container-highest border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary text-on-surface px-4 py-3 rounded-DEFAULT transition-all" placeholder="Tell us about the subject, style, and size..." rows="4"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 bg-primary text-on-primary font-headline-md py-4 rounded-DEFAULT hover:bg-on-surface-variant transition-all flex items-center justify-center gap-2" type="submit">
+                            Request Appointment
+                            <span class="material-symbols-outlined">send</span>
+</button>
+<a class="flex-1 border border-primary text-primary font-headline-md py-4 rounded-DEFAULT hover:bg-primary/10 transition-all flex items-center justify-center gap-3" href="https://wa.me/84389936096" target="_blank"
+rel="noopener noreferrer">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLsBClz2F5NScbOdfXfklktN1k4hcT9gojnOqZWfdzco8hCoB5JCCFG4C53y71h4RCpA0X5F9Oq9Sz1fZpvdc62u_S8OLbPp1mvjLrkeA2sTTaTCJqTJ_HTnJRK7j6wzo5mRg5kvCtFIL49Tm8oixKO5ihD2vsY5FDWmUO8OkwLj95xqa6HbEs-frj1FL_ksg9KEmUmfU9YWqsY1oR-RJotbDmbKSOvo74F7t3AyDz3REXg85Kjs3RgK">
+                            Chat on WhatsApp
+                        </a>
+</div>
+</form>
+</div>
+<!-- Location / Map Info-->
+<div class="space-y-8">
+<div class="bg-surface-container-highest p-8 rounded-DEFAULT space-y-6">
+<h3 class="font-headline-md border-b border-outline-variant pb-4">The Atelier</h3>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-body-md font-bold">Century Ink Studio</p>
+<p class="font-body-md text-on-surface-variant">Khu tập thể 16A Lý Nam Đế - nhà 27</p>
+<p class="font-body-md text-on-surface-variant">Hoàn Kiếm, Hà Nội</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<p class="font-body-md font-bold">Studio Hours</p>
+<p class="font-body-md text-on-surface-variant">Tue - Sat: 11:00 AM - 8:00 PM</p>
+<p class="font-body-md text-on-surface-variant">Sun: 12:00 PM - 6:00 PM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">contact_support</span>
+<div>
+<p class="font-body-md font-bold">Get in Touch</p>
+<p class="font-body-md text-on-surface-variant">hello@centuryink.vn</p>
+<p class="font-body-md text-on-surface-variant">+84 38 993 6096</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="h-64 bg-surface-container-highest rounded-DEFAULT overflow-hidden relative grayscale hover:grayscale-0 transition-all border border-outline-variant/30">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAiKeCNkbcI_sVrllCyO4hWoN8I-yDWSoSPq5pYqjwv1bOyMkfKIyGVxv2qJTbRm3qwJkx71_krN9Z-LBnooLSOTZGWxDRcfCDRAFeSt1hqhf9H9BaaYFF5zJyqov-iG2800NvzIooqI18ZWxcuZAj-PHwW5gRNGmj18-dVt-UMZD2O3u_KlRzFI48Ax5BvekZ22_lPU8-5_PGS7ZMU248c0oH28psxYifEcv_0Vr82cGcsUTbgqjTulZzYDNVZUJQEB0sHWGOi9u8&quot;);"></div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-primary text-on-primary px-4 py-2 rounded-full font-label-md flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined">location_on</span>
+                            Find Us Here
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left items-start">
+<div class="space-y-4">
+<img alt="Century Ink Footer Logo" class="h-10 mx-auto md:mx-0" src="logo.png">Premium tattoo artistry in the heart of Hanoi. Curated custom designs by master artist HaTran.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-primary uppercase mb-2 tracking-widest">Navigation</h4>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#portfolio">Portfolio</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#services">Services</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#bio">About HaTran</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#booking">Book Consultation</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-label-md text-primary uppercase mb-2 tracking-widest">Connect</h4>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="https://www.instagram.com/centuryink/">Instagram</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#">Facebook</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#">TikTok</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="mt-12 text-center border-t border-outline-variant/10 pt-8 px-4">
+<p class="font-label-sm text-on-surface-variant opacity-60">© 2026 Century Ink Tattoo Studio. All rights reserved.</p>
+</div>
+</footer>
+<!-- WhatsApp Floating CTA -->
+<div class="fixed bottom-6 right-6 z-[60] flex items-center gap-3">
+<a class="group flex items-center bg-white text-black pl-4 pr-1 py-1 rounded-full shadow-2xl hover:bg-zinc-200 transition-all transform hover:-translate-y-1" href="https://wa.me/84389936096" target="_blank"
+rel="noopener noreferrer">
+<span class="font-label-md mr-3 font-bold">Book on WhatsApp</span>
+<div class="w-12 h-12 bg-black rounded-full flex items-center justify-center">
+<img alt="WhatsApp" class="w-6 h-6 invert" src="https://lh3.googleusercontent.com/aida/AP1WRLsBClz2F5NScbOdfXfklktN1k4hcT9gojnOqZWfdzco8hCoB5JCCFG4C53y71h4RCpA0X5F9Oq9Sz1fZpvdc62u_S8OLbPp1mvjLrkeA2sTTaTCJqTJ_HTnJRK7j6wzo5mRg5kvCtFIL49Tm8oixKO5ihD2vsY5FDWmUO8OkwLj95xqa6HbEs-frj1FL_ksg9KEmUmfU9YWqsY1oR-RJotbDmbKSOvo74F7t3AyDz3REXg85Kjs3RgK">
+</div>
+</a>
+</div>
+
+<script>
+    // Lightbox Functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('close-lightbox');
+    const body = document.body;
+
+    function openLightbox(src) {
+        lightboxImg.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        // Small delay to trigger transition
+        setTimeout(() => {
+            lightbox.classList.add('opacity-100');
+            lightbox.classList.remove('opacity-0');
+        }, 10);
+        body.classList.add('lightbox-active');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.add('opacity-0');
+        lightbox.classList.remove('opacity-100');
+        setTimeout(() => {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            body.classList.remove('lightbox-active');
+        }, 300);
+    }
+
+    // Attach listeners to all portfolio items
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const src = item.getAttribute('data-src');
+            openLightbox(src);
+        });
+    });
+
+    // Close on button click
+    closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeLightbox();
+    });
+
+    // Close on backdrop click (clicking the lightbox div itself, not the image)
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.parentElement === lightbox || e.target.classList.contains('flex')) {
+            closeLightbox();
+        }
+    });
+    
+    // Prevent image click from closing lightbox
+    lightboxImg.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    // Escape key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+    });
+
+    // Smooth scroll implementation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
+    // Header transparency on scroll
+    const header = document.querySelector('nav');
+    window.addEventListener('scroll', () => {</script></body></html>
